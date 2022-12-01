@@ -11,7 +11,7 @@ export const MovieCard = ({ movie, showLink = true }) => {
             <img
                 src={imageURL + movie.poster_path}
                 alt={movie.title}
-                className="rounded-xl h-[400px]"
+                className="rounded-xl h-[400px] max-w-[266.66px]"
                 onMouseOver={changeImage}
             />
             <h2 className="font-bold tracking-wide mt-2 max-w-[200px] text-center">

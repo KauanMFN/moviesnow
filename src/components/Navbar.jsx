@@ -17,7 +17,7 @@ export const Navbar = () => {
     };
 
     return (
-        <nav className="px-12 py-4 flex justify-between items-center bg-light-gray">
+        <nav className="px-8 py-4 flex justify-between items-center bg-light-gray sm:px-12 transition-all">
             <h2>
                 <Link
                     to="/"
@@ -31,7 +31,7 @@ export const Navbar = () => {
                 <input
                     type="text"
                     placeholder="Busque um filme"
-                    className="bg-gray-100 px-2 rounded-md text-gray outline-none w-56"
+                    className="bg-gray-100 px-2 rounded-md text-gray outline-none w-auto sm:w-64"
                     onChange={(e) => setSearch(e.target.value)}
                     value={search}
                 />

@@ -32,7 +32,7 @@ export const Search = (movie, showLink = false) => {
 
     const changeImage = () => {};
     return (
-        <div className="p-3 rounded-xl bg-gray w-fit shadow-lg shadow-black flex justify-center items-center flex-col m-auto mt-4">
+        <div className="p-3 rounded-xl bg-gray w-fit flex justify-center items-center flex-col m-auto mt-4">
             <h2 className="text-center uppercase font-bold text-2xl mb-5 mt-5">
                 Resultados para: <span className="text-orange">{query}</span>
             </h2>
