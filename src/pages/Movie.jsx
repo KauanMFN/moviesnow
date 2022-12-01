@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { MovieDetail } from "../components/MovieDatail";
+import { MovieDetail } from "../components/MovieDetail";
 
 export const Movie = () => {
     const moviesURL = import.meta.env.VITE_API;

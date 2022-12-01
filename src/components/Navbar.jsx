@@ -30,7 +30,7 @@ export const Navbar = () => {
             <form className="flex gap-2" onSubmit={handleSearch}>
                 <input
                     type="text"
-                    placeholder="Busce um filme"
+                    placeholder="Busque um filme"
                     className="bg-gray-100 px-2 rounded-md text-gray outline-none w-56"
                     onChange={(e) => setSearch(e.target.value)}
                     value={search}
