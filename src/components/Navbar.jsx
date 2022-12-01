@@ -17,7 +17,7 @@ export const Navbar = () => {
     };
 
     return (
-        <nav className="px-8 py-4 flex justify-between items-center bg-light-gray sm:px-12 transition-all">
+        <nav className="px-8 py-4 flex justify-between items-center bg-light-gray sm:px-12 transition-all flex-col gap-2 ssm:flex-row ssm:gap-0">
             <h2>
                 <Link
                     to="/"
