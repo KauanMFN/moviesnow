@@ -24,7 +24,7 @@ export const MovieDetail = ({ movie, showLink = true }) => {
             <img
                 src={imageURL + movie.poster_path}
                 alt={movie.title}
-                className="rounded-xl h-[500px]"
+                className="rounded-xl w-[300px]"
             />
             <div className="flex flex-col justify-between gap-3 mb-2 items-center md:items-start">
                 <h2 className="font-bold tracking-wide text-3xl">

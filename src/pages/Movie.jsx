@@ -23,7 +23,7 @@ export const Movie = () => {
     }, []);
 
     return (
-        <div className="p-10">
+        <div className="p-3 ssm:p-10">
             {movie && (
                 <>
                     <MovieDetail movie={movie} showLink={false} />
