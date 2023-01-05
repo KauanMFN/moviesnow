@@ -17,7 +17,7 @@ export const Home = () => {
     };
 
     useEffect(() => {
-        const topRatedUrl = `${moviesURL}top_rated?${apiKEY}`;
+        const topRatedUrl = `${moviesURL}top_rated?${apiKEY}&language=pt-BR`;
 
         getTopRatedMovies(topRatedUrl);
 
@@ -27,7 +27,7 @@ export const Home = () => {
     return (
         <div>
             <h2 className="text-center uppercase font-bold text-2xl mb-5 mt-5">
-                Melhores filmes:
+                Filmes mais bem avaliados:
             </h2>
             <div className="flex flex-wrap gap-4 justify-center">
                 {topMovies.length === 0 && (

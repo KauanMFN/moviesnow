@@ -8,12 +8,14 @@ export const MovieCard = ({ movie, showLink = true }) => {
 
     return (
         <div className="p-3 rounded-xl bg-light-gray w-fit shadow-lg shadow-black flex justify-between items-center flex-col hover:scale-[103%] transition duration-300">
-            <img
-                src={imageURL + movie.poster_path}
-                alt={movie.title}
-                className="rounded-xl h-[400px] max-w-[266.66px]"
-                onMouseOver={changeImage}
-            />
+            <Link to={`/movie/${movie.id}`}>
+                <img
+                    src={imageURL + movie.poster_path}
+                    alt={movie.title}
+                    className="rounded-xl h-[400px] max-w-[266.66px]"
+                    onMouseOver={changeImage}
+                />
+            </Link>
             <h2 className="font-bold tracking-wide mt-2 max-w-[200px] text-center">
                 {movie.title}
             </h2>

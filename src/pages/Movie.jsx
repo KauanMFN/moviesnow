@@ -17,7 +17,7 @@ export const Movie = () => {
     };
 
     useEffect(() => {
-        const movieURL = `${moviesURL}${id}?${apiKEY}`;
+        const movieURL = `${moviesURL}${id}?${apiKEY}&language=pt-BR`;
 
         getMovie(movieURL);
     }, []);
