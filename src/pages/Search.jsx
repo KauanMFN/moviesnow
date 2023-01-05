@@ -38,7 +38,7 @@ export const Search = (movie, showLink = false) => {
             </h2>
             <div className="flex flex-wrap gap-4 justify-center">
                 {movies.length === 0 && (
-                    <p className="text-gray-400">Carregando... </p>
+                    <p className="text-gray-400 animate-pulse">Carregando...</p>
                 )}
 
                 {movies.length > 0 &&
